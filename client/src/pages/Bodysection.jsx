@@ -16,7 +16,7 @@ const Bodysection = ({handleClosHome, selectedFile, previewUrl, handleFileInput,
     const formData = new FormData();
     formData.append('image', selectedFile);
 
-    fetch('http://localhost:3001/api/upload-image', {
+    fetch('https://dominant-color-dector.onrender.com/api/upload-image', {
       method: 'POST',
       body: formData
     })

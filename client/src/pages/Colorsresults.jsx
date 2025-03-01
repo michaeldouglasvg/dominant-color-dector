@@ -13,7 +13,7 @@ const Colorsresults = ({handleClosHome, previewUrl}) => {
   const fetchColors = async () => {
     try {
       setLoading(true);
-      const response = await fetch('http://localhost:3001/api/dominant-colors');
+      const response = await fetch('https://dominant-color-dector.onrender.com/api/dominant-colors');
       const data = await response.json();
       setData(data);
     } catch (error) {
