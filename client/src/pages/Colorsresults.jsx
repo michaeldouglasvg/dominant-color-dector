@@ -58,8 +58,8 @@ const Colorsresults = ({ handleClosHome, previewUrl }) => {
           <ImageContainer>
             {previewUrl ? <img src={previewUrl} alt="Preview" /> : <FaImage size={50} color="grey" />}
           </ImageContainer>
-          <div>
-            <Button onClick={fetchColors} bg='blue' clr="white"><FaPalette /> Get Dominant Colors</Button>
+          <div style={{borderTop: "1px solid black", marginTop: "1rem"}}>
+            <Button onClick={fetchColors} bg='blue' clr="white" style={{margin: "1rem 0rem 1rem 0rem"}}><FaPalette /> Get Dominant Colors</Button>
           </div>
         </RightSection>
         <RightSection>
