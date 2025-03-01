@@ -17,7 +17,7 @@ def upload_image():
     image_data = file.read()
 
     # Process image
-    clusters = 6
+    clusters = 10
     img = cv2.imdecode(np.frombuffer(image_data, np.uint8), cv2.IMREAD_COLOR)
     img = imutils.resize(img, height=200)
 

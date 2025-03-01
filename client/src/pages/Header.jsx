@@ -1,19 +1,23 @@
 import React from 'react';
-import { HeaderStyled } from "../components/styled/Header.styled"
+import { FaPalette, FaMoon, FaSun } from 'react-icons/fa';
+import { HeaderStyled } from "../components/styled/Header.styled";
 
-const Header = ({handleTheme, set}) => {
+const Header = ({ handleTheme, set }) => {
   return (
     <HeaderStyled>
-      <div className='Logo'><p>Logo</p></div>
+      <div className='Logo'>
+        <FaPalette size={24} />
+      </div>
       <div className='Title'>
-       <p>DOMINANT COLOR DECTOR IN IMAGES</p>
-       <p>DCDM</p>
+        <p>DOMINANT COLOR DETECTOR IN IMAGES</p>
+        <p>DCDM</p>
       </div>
       <div className='Theme' onClick={handleTheme}>
-       <p>{set ? "Theme: Dark" : "Theme: Light"}</p>
+        {set ? <FaMoon size={24} /> : <FaSun size={24} />}
       </div>
     </HeaderStyled>
   );
-}
+};
 
 export default Header;
+

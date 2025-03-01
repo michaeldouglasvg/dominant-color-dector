@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
  width: 100%;
- height: 50px;
+ height: 70px;
  padding: 1rem .3rem;
  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
  display: flex;
  align-items: center;
  justify-content: space-between;
- background: green;
- /* background: rgb(11, 11, 54); */
+ background: rgb(4, 4, 92);
  @media (min-width: ${({theme}) => theme.responsive.mobilemd}){
   padding: 1rem 7rem;
  }
@@ -21,8 +20,7 @@ export const HeaderStyled = styled.header`
   overflow: hidden;
   display: grid;
   place-items: center;
-  color:  ${({theme}) => theme.colors.color};
-
+  color: white;
   & > img {
    width: 100%;
    height: 100%;
@@ -41,8 +39,8 @@ export const HeaderStyled = styled.header`
 
   & > p {
    font-size: 1.5rem;
-   color:  ${({theme}) => theme.colors.color};
    font-weight: 600;
+   color: white;
    &:nth-child(1) {
      display: none;
     }
@@ -65,8 +63,8 @@ export const HeaderStyled = styled.header`
   height: 40px;
   display: grid;
   place-items: center;
-  color:  ${({theme}) => theme.colors.color};
   border-radius: 3px;
+  color: white;
   cursor: pointer;
 
   & > p{

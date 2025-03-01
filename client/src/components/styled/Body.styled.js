@@ -2,10 +2,8 @@ import styled from 'styled-components';
 
 export const MainBodyDisplay = styled.div`
  width: 100%;
- height: calc(100vh - 100px);
  background: ${({theme}) => theme.colors.body};
  color:  ${({theme}) => theme.colors.color};
- box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
 
  @media (min-width: ${({theme}) => theme.responsive.mobilemd}){
   width: 88%;
@@ -72,7 +70,6 @@ export const LeftSection = styled.div`
 
 export const RightSection = styled.div`
  width: 100%;
- height: 70vh;
  box-shadow: 0 0 2px 1px rgba(0, 0, 0, .1);
  border-radius: 3px;
  padding: .6rem .6rem;
