@@ -15,7 +15,7 @@ def upload_image():
     image_data = file.read()
 
     # Your existing code to get dominant colors and percentages
-    clusters = 8 # try changing it
+    clusters = 6
     img = cv2.imdecode(np.frombuffer(image_data, np.uint8), cv2.IMREAD_COLOR)
     org_img = img.copy()
 
@@ -52,4 +52,4 @@ def get_dominant_colors():
     return jsonify(dominant_colors_data)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3001)
+    app.run()
